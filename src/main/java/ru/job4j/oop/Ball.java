@@ -4,7 +4,7 @@ public class Ball {
     public void tryRun(boolean condition) {
         if (condition) {
             System.out.println("Ball eaten");
+        } else { System.out.println("Ball run");
+            }
         }
-        System.out.println("Ball run");
     }
-}
