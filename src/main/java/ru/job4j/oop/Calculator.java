@@ -16,12 +16,12 @@ public class Calculator {
         return y - x;
     }
 
-    public int divide(int z) {
-        return z / x;
+    public int divide(int y) {
+        return y / x;
     }
 
-    public int sumAllOperation(int y, int z) {
-        return sum(y) + minus(y) + divide(z) + multiply(y);
+    public int sumAllOperation(int y) {
+        return sum(y) + minus(y) + divide(y) + multiply(y);
     }
 
     public static void main(String[] args) {
@@ -33,6 +33,6 @@ public class Calculator {
         System.out.println(sum(10));
         System.out.println(minus(10));
         System.out.println(calculator.divide(10));
-        System.out.println(calculator.sumAllOperation(10, 10));
+        System.out.println(calculator.sumAllOperation(10));
     }
 }
