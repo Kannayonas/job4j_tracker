@@ -1,6 +1,7 @@
 package ru.job4j.oop;
 
 import org.junit.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.offset;
 
@@ -15,6 +16,7 @@ public class PointTest {
         double result = a.distance(b);
         assertThat(result).isCloseTo(expected, offset(0.01));
     }
+
     @Test
     public void when45to34then1dot41() {
         Point a = new Point(4, 5);
@@ -33,6 +35,7 @@ public class PointTest {
         assertThat(result).isCloseTo(expected, offset(0.01));
 
     }
+
     @Test
     public void when77to78then1() {
         Point a = new Point(7, 7);
